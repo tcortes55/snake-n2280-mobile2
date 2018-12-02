@@ -11,9 +11,14 @@ html, body
 }
 
 
-ion-content, .scroll-content {
+ion-content {
+    // padding: 8px;
+}
+
+.scroll-content {
+    padding: 16px;
     background-color: black;
-  }
+}
 
 .game-container {
     /* width: fit-content;
@@ -33,9 +38,9 @@ ion-content, .scroll-content {
     /* top: 135px;
     left: 31px; */
     /* padding: 0.75em 1.05em; */
-    top: calc(calc(100vh - 72px) * 135/600);
-    /* left: calc(calc(100vh - 72px) * 31/600); */
-    padding: calc(calc(100vh - 72px) * 12/600) calc(calc(100vh - 72px) * 20/600);
+    top: calc(calc(100vh - 36px) * 135/600);
+    /* left: calc(calc(100vh - 36px) * 31/600); */
+    padding: calc(calc(100vh - 36px) * 12/600) calc(calc(100vh - 36px) * 20/600);
     z-index: -2;
     width: fit-content;
   }
@@ -50,7 +55,7 @@ ion-content, .scroll-content {
     /* font-family: 'Chakra Petch', sans-serif; */
     /* font-family: 'Eight Bit Dragon'; */
     /* font-size: 10px; */
-    font-size: calc(calc(100vh - 72px) * 10/600);
+    font-size: calc(calc(100vh - 36px) * 10/600);
   }
 
   .start-menu {
@@ -59,24 +64,24 @@ ion-content, .scroll-content {
     position: absolute;
     /* width: 61%;
     height: 52%; */
-    /* top: calc(calc(100vh - 72px) * 158/600);
-    left: calc(calc(100vh - 72px) * 274/600);
-    width: calc(calc(100vh - 72px) * 168/600);
-    height: calc(calc(100vh - 72px) * 120/600); */
+    /* top: calc(calc(100vh - 36px) * 158/600);
+    left: calc(calc(100vh - 36px) * 274/600);
+    width: calc(calc(100vh - 36px) * 168/600);
+    height: calc(calc(100vh - 36px) * 120/600); */
 
-    top: calc(calc(100vh - 72px) * 158/600);
-    width: calc(calc(100vh - 72px) * 168/600);
-    height: calc(calc(100vh - 72px) * 121/600);
+    top: calc(calc(100vh - 36px) * 158/600);
+    width: calc(calc(100vh - 36px) * 168/600);
+    height: calc(calc(100vh - 36px) * 121/600);
 
     display: flex;
     justify-content: center;
     align-items: center;
     
-    /* padding: calc(calc(100vh - 72px) * 20/600); */
+    /* padding: calc(calc(100vh - 36px) * 20/600); */
 
     text-align: center;
     /* font-family: 'Eight Bit Dragon'; */
-    font-size: calc(calc(100vh - 72px) * 16/600);
+    font-size: calc(calc(100vh - 36px) * 16/600);
 
     z-index: 9999;
   }
@@ -90,19 +95,19 @@ ion-content, .scroll-content {
   }
 
   .row {
-    /* height: calc((calc(100vh - 72px)) * 12/600 + 2px); */
-    height: calc(calc(100vh - 72px) * 12/600);
+    /* height: calc((calc(100vh - 36px)) * 12/600 + 2px); */
+    height: calc(calc(100vh - 36px) * 12/600);
 
     display: flex;
-    /* height: calc((calc(100vh - 72px)) * 12/600); */
+    /* height: calc((calc(100vh - 36px)) * 12/600); */
     /* VERSÃO CLARA */
     /* height: 26px; */
   }
   
   .column {
     /* border: 1px solid rgba(97, 131, 138, .1); */
-    width: calc((calc(100vh - 72px)) * 12/600);
-    height: calc((calc(100vh - 72px)) * 12/600);
+    width: calc((calc(100vh - 36px)) * 12/600);
+    height: calc((calc(100vh - 36px)) * 12/600);
     /* width: 12px;
     height: 12px; */
     /* VERSÃO CLARA */
@@ -114,8 +119,8 @@ ion-content, .scroll-content {
 
   .keypad {
     position: absolute;
-    top: calc(calc(100vh - 72px) * 384/600);
-    left: calc(calc(100vh - 72px) * 28/600);;
+    top: calc(calc(100vh - 36px) * 384/600);
+    left: calc(calc(100vh - 36px) * 28/600);;
     width: fit-content;
       /* width: 100%; */
       /* margin: auto; */
@@ -128,16 +133,16 @@ ion-content, .scroll-content {
   }
 
   .arrow {
-      width: calc(calc(100vh - 72px) * 76/600);;
-      height: calc(calc(100vh - 72px) * 43/600);;
+      width: calc(calc(100vh - 36px) * 76/600);;
+      height: calc(calc(100vh - 36px) * 43/600);;
       display: inline-block;
       margin: auto;
       background-color: rgba(255, 0, 0, 0.35);
   }
 
   .arrow-hidden {
-    width: calc(calc(100vh - 72px) * 59/600);;
-    height: calc(calc(100vh - 72px) * 43/600);;
+    width: calc(calc(100vh - 36px) * 59/600);;
+    height: calc(calc(100vh - 36px) * 43/600);;
     display: inline-block;
     margin: auto;
     /* background-color: rgba(0, 0, 255, 0.5); */
@@ -145,7 +150,7 @@ ion-content, .scroll-content {
 
   .bg-nokia {
     position: absolute;
-    height: calc(100vh - 72px);
+    height: calc(100vh - 36px);
     z-index: -1;
   }
 
