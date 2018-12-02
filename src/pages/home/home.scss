@@ -1,3 +1,199 @@
 page-home {
 
 }
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    /* width: fit-content;
+    height: fit-content; */
+    position: relative;
+    display: block;
+    margin: auto;
+    /* background-color: #47565A; */
+    /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22); */
+    /* border-radius: 5px; */
+  }
+
+  .game-screen {
+    /* background-color: rgb(155,185,4); */
+    background-color: rgb(155,185,4);
+    position: absolute;
+    /* top: 135px;
+    left: 31px; */
+    /* padding: 0.75em 1.05em; */
+    top: calc(calc(100vh - 72px) * 135/600);
+    /* left: calc(calc(100vh - 72px) * 31/600); */
+    padding: calc(calc(100vh - 72px) * 12/600) calc(calc(100vh - 72px) * 20/600);
+    z-index: -2;
+    width: fit-content;
+  }
+
+  .game-board {
+    border: solid 1px rgb(54, 72, 0);
+  }
+
+  .game-score {
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Press Start 2P', cursive; */
+    /* font-family: 'Chakra Petch', sans-serif; */
+    /* font-family: 'Eight Bit Dragon'; */
+    /* font-size: 10px; */
+    font-size: calc(calc(100vh - 72px) * 10/600);
+  }
+
+  .start-menu {
+    /* background-color: rgba(5,55,2,0.5); */
+    background-color: rgba(32,43,0, 0.5);
+    position: absolute;
+    /* width: 61%;
+    height: 52%; */
+    /* top: calc(calc(100vh - 72px) * 158/600);
+    left: calc(calc(100vh - 72px) * 274/600);
+    width: calc(calc(100vh - 72px) * 168/600);
+    height: calc(calc(100vh - 72px) * 120/600); */
+
+    top: calc(calc(100vh - 72px) * 158/600);
+    width: calc(calc(100vh - 72px) * 168/600);
+    height: calc(calc(100vh - 72px) * 121/600);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* padding: calc(calc(100vh - 72px) * 20/600); */
+
+    text-align: center;
+    /* font-family: 'Eight Bit Dragon'; */
+    font-size: calc(calc(100vh - 72px) * 16/600);
+
+    z-index: 9999;
+  }
+
+  .blink-me {
+    animation: blinker 1s linear 3;
+  }
+  
+  @keyframes blinker {  
+    100% { opacity: 0; }
+  }
+
+  .row {
+    /* height: calc((calc(100vh - 72px)) * 12/600 + 2px); */
+    height: calc(calc(100vh - 72px) * 12/600);
+
+    display: flex;
+    /* height: calc((calc(100vh - 72px)) * 12/600); */
+    /* VERSÃO CLARA */
+    /* height: 26px; */
+  }
+  
+  .column {
+    /* border: 1px solid rgba(97, 131, 138, .1); */
+    width: calc((calc(100vh - 72px)) * 12/600);
+    height: calc((calc(100vh - 72px)) * 12/600);
+    /* width: 12px;
+    height: 12px; */
+    /* VERSÃO CLARA */
+    /* width: 24px;
+    height: 24px; */
+    /* display: inline-block; */
+    display: inline;
+  }
+
+  .keypad {
+    position: absolute;
+    top: calc(calc(100vh - 72px) * 384/600);
+    left: calc(calc(100vh - 72px) * 28/600);;
+    width: fit-content;
+      /* width: 100%; */
+      /* margin: auto; */
+  }
+
+  .row-buttons {
+    width: fit-content;
+    display: block;
+    margin: auto;
+  }
+
+  .arrow {
+      width: calc(calc(100vh - 72px) * 76/600);;
+      height: calc(calc(100vh - 72px) * 43/600);;
+      display: inline-block;
+      margin: auto;
+      background-color: rgba(255, 0, 0, 0.35);
+  }
+
+  .arrow-hidden {
+    width: calc(calc(100vh - 72px) * 59/600);;
+    height: calc(calc(100vh - 72px) * 43/600);;
+    display: inline-block;
+    margin: auto;
+    /* background-color: rgba(0, 0, 255, 0.5); */
+  }
+
+  .bg-nokia {
+    position: absolute;
+    height: calc(100vh - 72px);
+    z-index: -1;
+  }
+
+  .absolute-center {
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+
+
+  .blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+@font-face {
+  /* font-family: "Eight Bit Dragon";
+  src: url(../snake-n2280/assets/eight-bit-dragon.otf) format("truetype"); */
+  font-family: 'Press Start 2P', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+}
+.customfont { 
+    font-family: "Press Start 2P", sans-serif, Tahoma;
+}
+
+  /* VERSÃO CLARA */
+  /* .head, .food {
+    position: absolute;
+    width: 36px;
+  }
+
+  .food {
+    transform: translateX(-6px) translateY(-6px);
+  }
+
+  .dir-left {
+    transform: translateX(-6px) translateY(-6px);
+  }
+
+  .dir-right {
+    transform: translateX(-6px) translateY(-6px) scaleX(-1);
+  }
+
+  .dir-up {
+    transform: translateX(-6px) translateY(-9px) rotateZ(90deg) scaleY(-1);
+  }
+
+  .dir-down {
+    transform: translateX(-6px) translateY(-9px) rotateZ(-90deg);
+  } */
