@@ -10,6 +10,11 @@ html, body
     padding: 0;
 }
 
+
+ion-content, .scroll-content {
+    background-color: black;
+  }
+
 .game-container {
     /* width: fit-content;
     height: fit-content; */
